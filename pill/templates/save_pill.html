@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Pill</title>
+</head>
+<body>
+    <h1>Add Pill</h1>
+    <form action="/add_pill" method="POST">
+        <label for="name">Pill Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="hour">Hour:</label>
+        <input type="text" id="hour" name="hour" placeholder="Enter hour (1-12)" required><br><br>
+        <label for="am_pm">AM/PM:</label>
+        <select id="am_pm" name="am_pm" required>
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+        </select><br><br>
+        <label for="bin_number">Bin Number:</label>
+        <input type="text" id="bin_number" name="bin_number" placeholder="Enter bin number" required><br><br>
+        <button type="submit">Add Pill</button>
+    </form>
+</body>
+</html>

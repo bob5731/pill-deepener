@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pill Schedule</title>
+</head>
+<body>
+    <h1>Pill Schedule</h1>
+    <ul>
+        {% for pill in pills %}
+            <li>Name: {{ pill[1] }}, Time: {{ pill[2] }}:{{ pill[3] }} {{ pill[4] }}, Bin Number: {{ pill[5] }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+
