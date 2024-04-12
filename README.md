@@ -1,7 +1,7 @@
 I'm working a Pill Deepener to deepened up to 30 pill a day by a schedule that can be edited. View Schedule it will allow you to edit your pill list and delete pill. Win the pills is deepened subtract the amount form the quantity. I do not want to pay $30 mo for here pill machine to work or pay $10 mo for Pria.
 
 I thank I have the interface the done  and working for now. Now I need to get the 
-servos to dispense one at a time then power off win all of the pill are dispense. I need get it delete schedule umber of pill form the databast.
+servos to dispense one at a time then power off win all of the pill are dispense. I need get it delete schedule umber of pill form the databast. Then delete the dispensed pill form the number pill in the database.
 
 This is what I hvae do so far.
 ![Screenshot_12-4-2024_125018_192 168 12 120](https://github.com/bob5731/pill-deepener/assets/16548974/10df8f6a-4b92-4a4e-a5cc-bdb0b4d3f10f)
