@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Pill</title>
+</head>
+<body>
+    <h1>Edit Pill</h1>
+    <form method="POST" action="/edit_pill/{{ pill[0] }}">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" value="{{ pill[1] }}"><br>
+        <label for="hour">Hour:</label><br>
+        <input type="number" id="hour" name="hour" value="{{ pill[2] }}"><br>
+        <label for="am_pm">AM/PM:</label><br>
+        <select id="am_pm" name="am_pm">
+            <option value="AM" {% if pill[3] == 'AM' %} selected {% endif %}>AM</option>
+            <option value="PM" {% if pill[3] == 'PM' %} selected {% endif %}>PM</option>
+        </select><br>
+        <label for="bin_number">Bin Number:</label><br>
+        <input type="number" id="bin_number" name="bin_number" value="{{ pill[4] }}"><br>
+        <input type="submit" value="Update Pill">
+    </form>
+</body>
+</html>

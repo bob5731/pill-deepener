@@ -1,0 +1,12 @@
+@app_flask.route('/dispense')
+def dispense_pills():
+    try:
+        # Move servo connected to channel 0 to a specific position (e.g., to dispense pills)
+        set_servo_pulse(0, servo_max)
+        time.sleep(1)  # Wait for 1 second (adjust as needed)
+        # Move the servo back to its original position
+        set_servo_pulse(0, servo_min)
+        return "Pills dispensed"
+    except Exception as e:
+        print("Error in dispense_pills route:", e)
+        return "An error occurred while dispensing pills"
